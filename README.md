@@ -8,8 +8,8 @@ This app to explain how to use aws lambada to run app without local server
 
 Routers
 
-get > /people
-get > /people/id
-post > people/id
-put > people/id
+get > /people  
+get > /people/id  
+post > people/id  
+put > people/id  
 delede > peopele/id
