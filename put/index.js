@@ -1,4 +1,4 @@
-import person from ('../schema');
+const person = require("./people.schema");
 
 exports.handler = async (e)=> {
   try {

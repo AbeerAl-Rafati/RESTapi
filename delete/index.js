@@ -1,23 +1,20 @@
-import person from ('../schema');
+const person = require("./people.schema");
 
-exports.handler = async (e)=> {
+exports.handler = async (e) => {
   try {
     const id = e?.pathParameters?.id;
-if (id){
-      await person.delete({id})
-}
+    if (id) {
+      await person.delete({ id });
+    }
 
-
-
-return{
-  statusCode: 200,
-  body: {}
-}
+    return {
+      statusCode: 200,
+      body: {},
+    };
   } catch (error) {
     return {
-      status : 500, 
-    message : error.message,
+      status: 500,
+      message: error.message,
+    };
   }
-  }
-}
-
+};
